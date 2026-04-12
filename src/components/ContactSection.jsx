@@ -118,17 +118,18 @@ const ContactSection = () => {
               <p className="text-knight-gray-muted text-xs font-mono mb-3">// Social Profiles</p>
               <div className="flex gap-3">
                 {[
-                  { label: 'LinkedIn', icon: 'LI', href: 'https://www.linkedin.com/in/parag-suthar-05b50b280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
-                  { label: 'GitHub',   icon: 'GH', href: 'https://github.com/Parag407' },
-                  { label: 'Twitter',  icon: 'TW', href: 'https://x.com/paragsuthar407?t=E4wwf9vWGn0fnEue3KPZPA&s=09' },
-                  { label: 'Instagram',icon: 'IG', href: 'https://www.instagram.com/parag_ig?igsh=MWdzNml1dHdrYm04bg==' },
+                  { label: 'LinkedIn', icon: <i className="fab fa-linkedin-in text-base"></i>, href: 'https://www.linkedin.com/in/parag-suthar-05b50b280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+                  { label: 'GitHub',   icon: <i className="fab fa-github text-base"></i>, href: 'https://github.com/Parag407' },
+                  { label: 'Twitter',  icon: <i className="fab fa-twitter text-base"></i>, href: 'https://x.com/paragsuthar407?t=E4wwf9vWGn0fnEue3KPZPA&s=09' },
+                  { label: 'Instagram',icon: <i className="fab fa-instagram text-base"></i>, href: 'https://www.instagram.com/parag_ig?igsh=MWdzNml1dHdrYm04bg==' },
                 ].map(s => (
                   <a
                     key={s.label}
                     href={s.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="px-3 py-2 border border-knight-gray/30 text-knight-gray-muted text-xs font-mono rounded-sm hover:border-knight-red/50 hover:text-knight-red transition-all duration-200"
+                    title={s.label}
+                    className="w-10 h-10 flex items-center justify-center border border-knight-gray/30 text-knight-gray-muted rounded-full hover:border-knight-red/50 hover:text-white hover:bg-knight-red/20 transition-all duration-200"
                   >
                     {s.icon}
                   </a>
