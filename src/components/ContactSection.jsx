@@ -118,9 +118,10 @@ const ContactSection = () => {
               <p className="text-knight-gray-muted text-xs font-mono mb-3">// Social Profiles</p>
               <div className="flex gap-3">
                 {[
-                  { label: 'GitHub', icon: 'GH', href: '#' },
-                  { label: 'LinkedIn', icon: 'LI', href: '#' },
-                  { label: 'Instagram', icon: 'IG', href: '#' },
+                  { label: 'LinkedIn', icon: 'LI', href: 'https://www.linkedin.com/in/parag-suthar-05b50b280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+                  { label: 'GitHub',   icon: 'GH', href: 'https://github.com/Parag407' },
+                  { label: 'Twitter',  icon: 'TW', href: 'https://x.com/paragsuthar407?t=E4wwf9vWGn0fnEue3KPZPA&s=09' },
+                  { label: 'Instagram',icon: 'IG', href: 'https://www.instagram.com/parag_ig?igsh=MWdzNml1dHdrYm04bg==' },
                 ].map(s => (
                   <a
                     key={s.label}
