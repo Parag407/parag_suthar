@@ -21,7 +21,7 @@ const ContactPage = () => {
     setStatus('loading');
     try {
       const fd = new FormData();
-      fd.append('access_key', 'YOUR_WEB3FORMS_ACCESS_KEY'); // ← replace with your key
+      fd.append('access_key', '34ba2f54-1a4b-499a-b0d1-0fb7c9639252'); // ← replace with your key
       fd.append('name',    form.name);
       fd.append('email',   form.email);
       fd.append('subject', form.subject || `Portfolio Contact from ${form.name}`);

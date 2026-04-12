@@ -29,7 +29,7 @@ const ContactSection = () => {
 
     try {
       const formData = new FormData();
-      formData.append('access_key', 'YOUR_WEB3FORMS_ACCESS_KEY'); // Replace with your key
+      formData.append('access_key', '34ba2f54-1a4b-499a-b0d1-0fb7c9639252'); // Replace with your key
       formData.append('name', form.name);
       formData.append('email', form.email);
       formData.append('subject', form.subject || `Portfolio Contact from ${form.name}`);
