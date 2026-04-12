@@ -80,7 +80,7 @@ const Navbar = () => {
             to="/contact"
             className="ml-3 px-5 py-2 bg-knight-red text-white text-sm font-outfit font-semibold rounded-sm transition-all duration-200 hover:bg-knight-red-bright hover:shadow-[0_0_18px_rgba(192,57,43,0.5)]"
           >
-            Hire Me
+            Contact Me
           </Link>
         </div>
 

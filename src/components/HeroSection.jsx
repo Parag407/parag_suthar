@@ -71,7 +71,7 @@ const HeroSection = () => {
 
             {/* Typewriter */}
             <div className="flex items-center gap-2 mb-8 h-8">
-              <span className="text-knight-gray-faint font-inter text-lg">I build </span>
+              <span className="text-knight-gray-faint font-inter text-lg">I Am </span>
               <span className="text-knight-red font-outfit font-semibold text-lg">
                 {displayText}
                 <span className="animate-[typeCursor_1s_step-end_infinite] text-knight-red">|</span>
