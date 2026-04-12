@@ -236,7 +236,7 @@ const ProjectCard = ({ project }) => {
       {/* Image section */}
       <div className="relative">
         <ProjectImage imgFile={project.imgFile} label={project.imgPlaceholder} color={project.color} />
-        {/* Overlay badges */}}
+        {/* Overlay badges */}
         <div className="absolute top-2 left-2 flex gap-1.5">
           {project.featured && (
             <span className="px-2 py-0.5 text-[10px] font-mono bg-knight-red/80 text-white rounded">Featured</span>
