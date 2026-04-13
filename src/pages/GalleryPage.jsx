@@ -339,9 +339,12 @@ const TimelineCard = ({ item, index, isLeft }) => {
   const tagColor = item.tag === '1st Place' ? '#FFD700' : item.tag === '2nd Place' ? '#C0C0C0' : '#C0392B';
 
   return (
-    <div className={`relative flex items-start gap-0 ${isLeft ? 'flex-row' : 'flex-row-reverse'} group`}>
-      {/* Card */}
-      <div className={`w-[calc(50%-28px)] ${isLeft ? 'pr-6 text-right' : 'pl-6 text-left'}`}>
+    <div className={`relative flex items-start gap-0 group ${
+      /* On mobile: always single column (left aligned), on md+ alternate sides */
+      isLeft ? 'md:flex-row flex-row' : 'md:flex-row-reverse flex-row'
+    }`}>
+      {/* Card — full width on mobile, half width on md+ */}
+      <div className={`w-full md:w-[calc(50%-28px)] ${isLeft ? 'md:pr-6 md:text-right' : 'md:pl-6 md:text-left'} pl-6`}>
         <div
           className="knight-card rounded-sm p-5 transition-all duration-300 group-hover:shadow-[0_0_24px_rgba(192,57,43,0.18)] relative overflow-hidden"
           style={{ borderColor: `${item.color}25` }}
@@ -350,7 +353,7 @@ const TimelineCard = ({ item, index, isLeft }) => {
           <div className="absolute top-0 left-0 right-0 h-0.5" style={{ background: `linear-gradient(90deg, ${item.color}, transparent)` }} />
 
           {/* Header */}
-          <div className={`flex items-center gap-2 mb-3 ${isLeft ? 'justify-end' : 'justify-start'}`}>
+          <div className={`flex items-center gap-2 mb-3 ${isLeft ? 'md:justify-end justify-start' : 'justify-start'}`}>
             <span
               className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded"
               style={{ background: tagBg, color: tagColor, border: `1px solid ${tagColor}30` }}
@@ -381,7 +384,7 @@ const TimelineCard = ({ item, index, isLeft }) => {
           <p className="text-knight-gray-muted text-xs leading-relaxed mb-3">{item.desc}</p>
 
           {/* Highlights */}
-          <div className={`flex flex-wrap gap-1.5 ${isLeft ? 'justify-end' : 'justify-start'}`}>
+          <div className={`flex flex-wrap gap-1.5 ${isLeft ? 'md:justify-end justify-start' : 'justify-start'}`}>
             {item.highlights.map((h, i) => (
               <span
                 key={i}
@@ -395,10 +398,10 @@ const TimelineCard = ({ item, index, isLeft }) => {
         </div>
       </div>
 
-      {/* Center dot */}
-      <div className="flex flex-col items-center flex-shrink-0 mt-5 z-10">
+      {/* Center dot — always on left on mobile, center on md+ */}
+      <div className="absolute -left-3 md:static flex flex-col items-center flex-shrink-0 mt-5 z-10">
         <div
-          className="w-10 h-10 rounded-full flex items-center justify-center text-lg shadow-lg transition-all duration-300 group-hover:scale-110"
+          className="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center text-base md:text-lg shadow-lg transition-all duration-300 group-hover:scale-110"
           style={{
             background: `radial-gradient(circle, ${item.color}30, ${item.color}10)`,
             border: `2px solid ${item.color}60`,
@@ -409,8 +412,8 @@ const TimelineCard = ({ item, index, isLeft }) => {
         </div>
       </div>
 
-      {/* Spacer right/left */}
-      <div className="w-[calc(50%-28px)]" />
+      {/* Spacer right/left — hidden on mobile */}
+      <div className="hidden md:block md:w-[calc(50%-28px)]" />
     </div>
   );
 };
@@ -445,7 +448,7 @@ const GalleryPage = () => {
         <Navbar />
 
         {/* Hero Banner */}
-        <div className="relative pt-32 pb-16 px-6 overflow-hidden">
+        <div className="relative pt-28 sm:pt-32 pb-16 px-4 sm:px-6 overflow-hidden">
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="w-[500px] h-[300px] rounded-full bg-knight-red/5 blur-3xl" />
           </div>
@@ -458,7 +461,7 @@ const GalleryPage = () => {
             </div>
 
             <p className="text-knight-red font-mono text-sm mb-3">// Achievement Timeline</p>
-            <h1 className="font-outfit font-black text-5xl lg:text-6xl text-knight-white mb-4">
+            <h1 className="font-outfit font-black text-4xl sm:text-5xl lg:text-6xl text-knight-white mb-4">
               My <span className="text-knight-red">Journey</span>
             </h1>
             <p className="text-knight-gray-muted text-base max-w-xl leading-relaxed mb-6">
@@ -484,7 +487,7 @@ const GalleryPage = () => {
         </div>
 
         {/* Filters */}
-        <div className="sticky top-16 z-40 bg-knight-black/90 backdrop-blur-md border-b border-knight-red/10 px-6 py-4">
+        <div className="sticky top-16 z-40 bg-knight-black/90 backdrop-blur-md border-b border-knight-red/10 px-4 sm:px-6 py-3 sm:py-4">
           <div className="max-w-7xl mx-auto">
             {/* Category filters */}
             <div className="flex flex-wrap gap-2 mb-3">
@@ -522,7 +525,7 @@ const GalleryPage = () => {
         </div>
 
         {/* Timeline */}
-        <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
           {Object.keys(grouped).sort().map(year => (
             <div key={year} className="mb-16">
               {/* Year badge */}
@@ -536,8 +539,10 @@ const GalleryPage = () => {
 
               {/* Items */}
               <div className="relative">
-                {/* Vertical line */}
-                <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-knight-red/40 via-knight-red/20 to-transparent -translate-x-1/2" />
+                {/* Vertical line - hidden on mobile where we use absolute positioning */}
+                <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-knight-red/40 via-knight-red/20 to-transparent -translate-x-1/2" />
+                {/* Vertical line for mobile (left side) */}
+                <div className="md:hidden absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-knight-red/40 via-knight-red/20 to-transparent" />
 
                 <div className="space-y-10">
                   {grouped[year].map((item, i) => (

@@ -53,20 +53,20 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="relative py-28 overflow-hidden" ref={ref}>
+    <section id="experience" className="relative py-16 lg:py-28 overflow-hidden" ref={ref}>
       <div className="absolute right-0 bottom-0 w-72 h-72 bg-knight-red/5 blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="reveal mb-16">
           <p className="text-knight-red font-mono text-sm mb-2">// Career Timeline</p>
-          <h2 className="font-outfit font-black text-4xl lg:text-5xl text-knight-white mb-4">
+          <h2 className="font-outfit font-black text-3xl sm:text-4xl lg:text-5xl text-knight-white mb-4">
             Experience & <span className="text-knight-red">Education</span>
           </h2>
           <div className="h-px bg-gradient-to-r from-knight-red via-knight-red/30 to-transparent w-48" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Experience */}
           <div>
             <h3 className="font-outfit font-bold text-knight-white mb-8 flex items-center gap-3 reveal">
@@ -83,16 +83,16 @@ const ExperienceSection = () => {
               {/* Top red bar */}
               <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-knight-red via-knight-red-bright to-transparent" />
 
-              <div className="flex items-start justify-between mb-4">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
                 <div>
                   <h4 className="font-outfit font-bold text-knight-white text-lg">Full Stack Development Intern</h4>
                   <p className="text-knight-red font-semibold text-sm mt-1">Zamanat Pvt. Ltd.</p>
                 </div>
-                <div className="flex-shrink-0 text-right">
+                <div className="flex-shrink-0 sm:text-right">
                   <span className="text-xs bg-knight-red/15 border border-knight-red/30 text-knight-red px-2 py-1 rounded font-mono">
                     01/2024 – 05/2025
                   </span>
-                  <p className="text-knight-gray-muted text-xs mt-1 text-right">📍 Mumbai</p>
+                  <p className="text-knight-gray-muted text-xs mt-1 sm:text-right">📍 Mumbai</p>
                 </div>
               </div>
 

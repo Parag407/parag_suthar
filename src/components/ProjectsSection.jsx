@@ -151,7 +151,7 @@ const ProjectCard = ({ project, index }) => {
         {/* Tech stack */}
         <div className="flex flex-wrap gap-1.5 pt-3 border-t border-knight-black-5">
           {project.tech.map(t => (
-            <span key={t} className="px-2 py-0.5 text-xs font-mono bg-knight-black-5 text-knight-gray-muted border border-knight-gray/20 rounded group-hover:border-knight-red/30 group-hover:text-knight-red/80 transition-all duration-200">
+            <span key={t} className="px-2 py-0.5 text-xs font-mono bg-knight-black-5 border border-knight-gray/30 rounded group-hover:border-knight-red/30 group-hover:text-knight-red transition-all duration-200" style={{ color: 'antiquewhite' }}>
               {t}
             </span>
           ))}
@@ -179,15 +179,15 @@ const ProjectsSection = () => {
   }, []);
 
   return (
-    <section id="projects" className="relative py-28 overflow-hidden" ref={ref}>
+    <section id="projects" className="relative py-16 lg:py-28 overflow-hidden" ref={ref}>
       <div className="absolute inset-0 bg-knight-black-2/40 pointer-events-none" />
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-knight-red/3 blur-3xl rounded-full pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
         <div className="reveal mb-16">
           <p className="text-knight-red font-mono text-sm mb-2">// Portfolio</p>
-          <h2 className="font-outfit font-black text-4xl lg:text-5xl text-knight-white mb-4">
+          <h2 className="font-outfit font-black text-3xl sm:text-4xl lg:text-5xl text-knight-white mb-4">
             Featured <span className="text-knight-red">Projects</span>
           </h2>
           <div className="flex items-center gap-4">

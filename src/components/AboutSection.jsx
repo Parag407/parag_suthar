@@ -43,11 +43,11 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="relative py-28 overflow-hidden" ref={ref}>
+    <section id="about" className="relative py-16 lg:py-28 overflow-hidden" ref={ref}>
       {/* Background accent */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-knight-red/5 blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="reveal mb-16">
           <div className="flex items-center gap-4 mb-4">
@@ -56,7 +56,7 @@ const AboutSection = () => {
             <span className="text-knight-red font-mono text-sm">id</span>
             <span className="text-knight-gray-muted font-mono text-sm">= "about"{'>'}</span>
           </div>
-          <h2 className="font-outfit font-black text-4xl lg:text-5xl text-knight-white mb-3">
+          <h2 className="font-outfit font-black text-3xl sm:text-4xl lg:text-5xl text-knight-white mb-3">
             About <span className="text-knight-red">Me</span>
           </h2>
           <div className="flex items-center gap-4">
@@ -65,11 +65,11 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left: Text */}
           <div className="space-y-6 reveal">
             {/* Code-style block */}
-            <div className="bg-knight-black-3/50 border border-knight-red/20 rounded-sm p-4 font-mono text-sm">
+            <div className="bg-knight-black-3/50 border border-knight-red/20 rounded-sm p-4 font-mono text-sm overflow-x-auto">
               <div className="text-knight-gray-muted mb-2">
                 <span className="text-knight-red">const</span>
                 <span className="text-knight-white"> developer</span>

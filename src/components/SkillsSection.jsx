@@ -107,14 +107,14 @@ const SkillsSection = () => {
   }, []);
 
   return (
-    <section id="skills" className="relative py-28 overflow-hidden" ref={ref}>
+    <section id="skills" className="relative py-16 lg:py-28 overflow-hidden" ref={ref}>
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-knight-red-muted/5 blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="reveal mb-16">
           <p className="text-knight-red font-mono text-sm mb-2">// Technical Arsenal</p>
-          <h2 className="font-outfit font-black text-4xl lg:text-5xl text-knight-white mb-4">
+          <h2 className="font-outfit font-black text-3xl sm:text-4xl lg:text-5xl text-knight-white mb-4">
             Skills & <span className="text-knight-red">Expertise</span>
           </h2>
           <div className="h-px bg-gradient-to-r from-knight-red via-knight-red/30 to-transparent w-48" />
@@ -126,7 +126,7 @@ const SkillsSection = () => {
             <button
               key={i}
               onClick={() => setActiveCategory(i)}
-              className={`px-4 py-2 rounded-sm text-sm font-outfit font-medium transition-all duration-200 ${
+              className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-sm text-xs sm:text-sm font-outfit font-medium transition-all duration-200 ${
                 activeCategory === i
                   ? 'bg-knight-red text-white shadow-[0_0_15px_rgba(192,57,43,0.4)]'
                   : 'border border-knight-gray/30 text-knight-gray-muted hover:border-knight-red/50 hover:text-knight-red'

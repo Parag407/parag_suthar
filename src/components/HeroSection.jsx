@@ -36,14 +36,14 @@ const HeroSection = () => {
   }, [charIndex, deleting, roleIndex]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 px-4 sm:px-6">
       {/* central glow */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="w-[640px] h-[640px] rounded-full bg-knight-red/5 blur-3xl" />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-6xl mx-auto w-full">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
           {/* ── Left ── */}
           <div className={`transition-all duration-1000 ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
@@ -60,10 +60,10 @@ const HeroSection = () => {
             </p>
 
             {/* Name */}
-            <h1 className="font-outfit font-black text-6xl lg:text-7xl leading-none mb-1 glitch" data-text="PARAG">
+            <h1 className="font-outfit font-black text-4xl sm:text-5xl lg:text-7xl leading-none mb-1 glitch" data-text="PARAG">
               <span className="text-knight-white">PARAG</span>
             </h1>
-            <h1 className="font-outfit font-black text-6xl lg:text-7xl leading-none mb-6 glitch" data-text="SUTHAR">
+            <h1 className="font-outfit font-black text-4xl sm:text-5xl lg:text-7xl leading-none mb-6 glitch" data-text="SUTHAR">
               <span className="bg-gradient-to-r from-knight-red to-knight-red-bright bg-clip-text text-transparent red-text-glow">
                 SUTHAR
               </span>
@@ -125,20 +125,20 @@ const HeroSection = () => {
 
           {/* ── Right: Profile ── */}
           <div className={`flex justify-center lg:justify-end transition-all duration-1000 delay-300 ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-            <div className="relative">
-              {/* Decorative rings */}
-              <div className="absolute inset-0 -m-8 rounded-full border border-knight-red/10 animate-[float_6s_ease-in-out_infinite]" />
-              <div className="absolute inset-0 -m-16 rounded-full border border-knight-red/5 animate-[float_8s_ease-in-out_infinite_reverse]" />
+            <div className="relative mt-8 lg:mt-0">
+              {/* Decorative rings — hidden on mobile to avoid overflow */}
+              <div className="hidden sm:block absolute inset-0 -m-8 rounded-full border border-knight-red/10 animate-[float_6s_ease-in-out_infinite]" />
+              <div className="hidden sm:block absolute inset-0 -m-16 rounded-full border border-knight-red/5 animate-[float_8s_ease-in-out_infinite_reverse]" />
 
               {/* Corner decorators */}
               <div className="absolute -top-4 -right-4 w-12 h-12 border border-knight-red/30 rotate-45" />
               <div className="absolute -bottom-4 -left-4 w-8 h-8 bg-knight-red/20 rotate-45" />
-              <div className="absolute top-1/2 -left-8 w-3 h-3 bg-knight-red rounded-full animate-pulse" />
+              <div className="hidden sm:block absolute top-1/2 -left-8 w-3 h-3 bg-knight-red rounded-full animate-pulse" />
               <div className="absolute -top-2 left-1/3 w-2 h-2 bg-knight-red/60 rounded-full animate-pulse delay-700" />
 
               {/* Photo */}
               <div className="relative corner-bracket">
-                <div className="w-72 h-80 lg:w-80 lg:h-96 rounded-sm overflow-hidden border-2 border-knight-red/40 shadow-[0_0_40px_rgba(192,57,43,0.3)]">
+                <div className="w-64 h-72 sm:w-72 sm:h-80 lg:w-80 lg:h-96 rounded-sm overflow-hidden border-2 border-knight-red/40 shadow-[0_0_40px_rgba(192,57,43,0.3)]">
                   <img
                     src="/assets/profile/parag_profile_pic.jpeg"
                     alt="Parag Kumar Suthar"
@@ -147,17 +147,17 @@ const HeroSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-knight-red/20 via-transparent to-transparent" />
                 </div>
 
-                {/* Floating stats */}
-                <div className="absolute -left-12 top-8 bg-knight-black-3/90 backdrop-blur border border-knight-red/30 rounded-sm px-3 py-2 shadow-lg">
-                  <div className="text-knight-red font-outfit font-bold text-xl leading-none">9.6</div>
-                  <div className="text-knight-gray-faint font-inter text-xs">SGPI Score</div>
+                {/* Floating stats — inside photo on mobile, outside on sm+ */}
+                <div className="absolute left-2 top-2 sm:-left-12 sm:top-8 bg-knight-black-3/90 backdrop-blur border border-knight-red/30 rounded-sm px-2 py-1.5 sm:px-3 sm:py-2 shadow-lg">
+                  <div className="text-knight-red font-outfit font-bold text-base sm:text-xl leading-none">9.6</div>
+                  <div className="text-knight-gray-faint font-inter text-xs">SGPI</div>
                 </div>
-                <div className="absolute -right-12 bottom-12 bg-knight-black-3/90 backdrop-blur border border-knight-red/30 rounded-sm px-3 py-2 shadow-lg">
-                  <div className="text-knight-red font-outfit font-bold text-xl leading-none">1+</div>
+                <div className="absolute right-2 bottom-16 sm:-right-12 sm:bottom-12 bg-knight-black-3/90 backdrop-blur border border-knight-red/30 rounded-sm px-2 py-1.5 sm:px-3 sm:py-2 shadow-lg">
+                  <div className="text-knight-red font-outfit font-bold text-base sm:text-xl leading-none">1+</div>
                   <div className="text-knight-gray-faint font-inter text-xs">Yrs Exp.</div>
                 </div>
-                <div className="absolute -left-8 bottom-4 bg-knight-black-3/90 backdrop-blur border border-knight-red/30 rounded-sm px-3 py-2 shadow-lg">
-                  <div className="text-knight-red font-outfit font-bold text-xl leading-none">8+</div>
+                <div className="absolute left-2 bottom-2 sm:-left-8 sm:bottom-4 bg-knight-black-3/90 backdrop-blur border border-knight-red/30 rounded-sm px-2 py-1.5 sm:px-3 sm:py-2 shadow-lg">
+                  <div className="text-knight-red font-outfit font-bold text-base sm:text-xl leading-none">8+</div>
                   <div className="text-knight-gray-faint font-inter text-xs">Projects</div>
                 </div>
               </div>
@@ -166,7 +166,7 @@ const HeroSection = () => {
         </div>
 
         {/* Page-nav cards at bottom */}
-        <div className={`mt-24 grid grid-cols-2 md:grid-cols-4 gap-4 transition-all duration-1000 delay-500 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div className={`mt-16 lg:mt-24 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 transition-all duration-1000 delay-500 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           {[
             { label: 'About Me',     sub: 'Skills · Experience',     path: '/about',    icon: '👤' },
             { label: 'Achievement Gallery', sub: 'My journey 2021–25', path: '/gallery', icon: '🏆' },

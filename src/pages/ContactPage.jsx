@@ -47,7 +47,7 @@ const ContactPage = () => {
         <Navbar />
 
         {/* ── Banner ── */}
-        <div className="relative pt-32 pb-10 px-6 overflow-hidden">
+        <div className="relative pt-28 sm:pt-32 pb-10 px-4 sm:px-6 overflow-hidden">
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="w-[480px] h-[280px] rounded-full bg-knight-red/5 blur-3xl" />
           </div>
@@ -58,7 +58,7 @@ const ContactPage = () => {
               <span className="text-knight-gray-faint">Contact</span>
             </div>
             <p className="text-knight-red font-mono text-sm mb-3">// Let's Connect</p>
-            <h1 className="font-outfit font-black text-5xl lg:text-6xl text-knight-white mb-4">
+            <h1 className="font-outfit font-black text-4xl sm:text-5xl lg:text-6xl text-knight-white mb-4">
               Get In <span className="text-knight-red">Touch</span>
             </h1>
             <p className="text-knight-gray-muted text-base max-w-xl leading-relaxed">
@@ -69,8 +69,8 @@ const ContactPage = () => {
         </div>
 
         {/* ── Body ── */}
-        <div className="max-w-6xl mx-auto px-6 pt-4 pb-24">
-          <div className="grid lg:grid-cols-5 gap-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-4 pb-16 sm:pb-24">
+          <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
 
             {/* Left: info + social */}
             <div className="lg:col-span-2 space-y-5">
@@ -144,7 +144,7 @@ const ContactPage = () => {
 
             {/* Right: form */}
             <div className="lg:col-span-3">
-              <div className="knight-card rounded-sm p-8 relative overflow-hidden">
+              <div className="knight-card rounded-sm p-5 sm:p-8 relative overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-knight-red via-knight-red-deep to-transparent" />
 
                 <h2 className="font-outfit font-bold text-knight-white text-xl mb-6 flex items-center gap-2">

@@ -119,6 +119,15 @@ const Navbar = () => {
               </Link>
             );
           })}
+          {/* Mobile CTA */}
+          <div className="pt-3">
+            <Link
+              to="/contact"
+              className="flex items-center justify-center gap-2 w-full py-3 bg-knight-red text-white text-sm font-outfit font-semibold rounded-sm transition-all duration-200 hover:bg-knight-red-bright"
+            >
+              Contact Me
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

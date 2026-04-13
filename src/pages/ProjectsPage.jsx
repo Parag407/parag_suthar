@@ -294,7 +294,7 @@ const ProjectCard = ({ project }) => {
         {/* Tags */}
         <div className="flex flex-wrap gap-1.5 mb-4">
           {project.tags.map(tag => (
-            <span key={tag} className="px-1.5 py-0.5 text-[10px] font-mono bg-knight-black-5 text-knight-gray/60 border border-knight-gray/15 rounded">
+            <span key={tag} className="px-1.5 py-0.5 text-[10px] font-mono bg-knight-black-5 border border-knight-gray/25 rounded" style={{ color: 'antiquewhite' }}>
               {tag}
             </span>
           ))}
@@ -305,8 +305,8 @@ const ProjectCard = ({ project }) => {
           {project.tech.map(t => (
             <span
               key={t}
-              className="px-2 py-0.5 text-[10px] font-mono border rounded transition-all duration-200 group-hover:border-knight-red/30 group-hover:text-knight-red/70"
-              style={{ background: `${project.color}08`, borderColor: `${project.color}20`, color: '#888' }}
+              className="px-2 py-0.5 text-[10px] font-mono border rounded transition-all duration-200 group-hover:border-knight-red/30 group-hover:text-knight-red"
+              style={{ background: `${project.color}08`, borderColor: `${project.color}30`, color: 'antiquewhite' }}
             >
               {t}
             </span>
@@ -390,7 +390,7 @@ const ProjectsPage = () => {
         <Navbar />
 
         {/* Hero */}
-        <div className="relative pt-32 pb-12 px-6 overflow-hidden">
+        <div className="relative pt-28 sm:pt-32 pb-12 px-4 sm:px-6 overflow-hidden">
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="w-[500px] h-[300px] rounded-full bg-knight-red/4 blur-3xl" />
           </div>
@@ -403,7 +403,7 @@ const ProjectsPage = () => {
             </div>
 
             <p className="text-knight-red font-mono text-sm mb-3">// Portfolio</p>
-            <h1 className="font-outfit font-black text-5xl lg:text-6xl text-knight-white mb-4">
+            <h1 className="font-outfit font-black text-4xl sm:text-5xl lg:text-6xl text-knight-white mb-4">
               All <span className="text-knight-red">Projects</span>
             </h1>
             <p className="text-knight-gray-muted text-base max-w-xl leading-relaxed">
@@ -429,12 +429,12 @@ const ProjectsPage = () => {
         </div>
 
         {/* Search & Filters Bar */}
-        <div className="sticky top-16 z-40 bg-knight-black/95 backdrop-blur-md border-b border-knight-red/10 px-6 py-4">
+        <div className="sticky top-16 z-40 bg-knight-black/95 backdrop-blur-md border-b border-knight-red/10 px-4 sm:px-6 py-3 sm:py-4">
           <div className="max-w-7xl mx-auto space-y-3">
             {/* Row 1: Search + Sort + View */}
-            <div className="flex gap-3 flex-wrap items-center">
+            <div className="flex gap-2 sm:gap-3 flex-wrap items-center">
               {/* Search */}
-              <div className="relative flex-1 min-w-[200px] max-w-md">
+              <div className="relative flex-1 min-w-[140px] max-w-md">
                 <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-knight-red/60" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
@@ -523,7 +523,7 @@ const ProjectsPage = () => {
         </div>
 
         {/* Projects Grid / List */}
-        <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
           {filtered.length === 0 ? (
             <div className="text-center py-24">
               <p className="text-5xl mb-4">🔍</p>
@@ -545,11 +545,11 @@ const ProjectsPage = () => {
               {filtered.map(p => (
                 <div
                   key={p.id}
-                  className="knight-card rounded-sm overflow-hidden flex gap-0 group transition-all duration-300 hover:shadow-[0_0_20px_rgba(192,57,43,0.15)]"
+                  className="knight-card rounded-sm overflow-hidden flex flex-col sm:flex-row gap-0 group transition-all duration-300 hover:shadow-[0_0_20px_rgba(192,57,43,0.15)]"
                   style={{ borderColor: `${p.color}20` }}
                 >
-                  {/* Thumbnail */}
-                  <div className="w-48 flex-shrink-0 relative overflow-hidden">
+                  {/* Thumbnail — hidden on mobile, shown on sm+ */}
+                  <div className="hidden sm:block w-48 flex-shrink-0 relative overflow-hidden">
                     <ProjectImage imgFile={p.imgFile} label={p.imgPlaceholder} color={p.color} height="h-full" />
                     {p.featured && (
                       <div className="absolute top-2 left-2">

@@ -14,8 +14,25 @@
   --black-3: #1A1A1A;
 }
 
-* {
+*, *::before, *::after {
+  box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+/* Prevent horizontal overflow globally */
+html, body, #root {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Images & media never overflow their container */
+img, video, svg {
+  max-width: 100%;
+}
+
+/* Minimum touch target size for accessibility */
+a, button {
+  min-height: 36px;
 }
 
 html {
