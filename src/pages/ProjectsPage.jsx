@@ -26,8 +26,8 @@ I led a team from initial requirement gathering, system design, all the way thro
     highlights: ['Browser-based code editors', 'Teacher + Student dashboards', 'Real-time feedback system', 'Team lead from scratch to ship'],
     imgFile: 'gyancode.jpg',
     imgPlaceholder: 'GyanCode Platform Dashboard & Code Editor',
-    github: '#',
-    live: '#',
+    github: 'http://github.com/Parag407/GyanCode',
+    live: 'https://gyan-code.vercel.app/',
     color: '#C0392B',
   },
   {
@@ -46,8 +46,8 @@ Built as a lightweight, accessible tool that requires no installation — develo
     highlights: ['AI code suggestions via DeepSeek R1', 'Zero-install browser IDE', 'Auto-completion & error hints', 'Deployed live on Vercel'],
     imgFile: 'ai_code_editor.jpg',
     imgPlaceholder: 'AI Code Editor Interface & AI Suggestions Panel',
-    github: '#',
-    live: '#',
+    github: 'https://github.com/Parag407/CodeWeb-v3',
+    live: 'https://code-web-v3.vercel.app/',
     color: '#8B1A1A',
   },
   {
@@ -126,8 +126,8 @@ Features include a chronological gallery, dedicated projects page with search, W
     highlights: ['Custom knight red/black design system', 'Canvas particle background', 'Scroll-reveal animations', 'Web3Forms integration', 'Gallery & Projects pages'],
     imgFile: 'portfolio_website.jpg',
     imgPlaceholder: 'Portfolio Hero, Gallery, and Projects Pages',
-    github: '#',
-    live: '#',
+    github: 'https://github.com/Parag407/parag_suthar',
+    live: 'https://parag-suthar.vercel.app/',
     color: '#8B1A1A',
   },
   {
