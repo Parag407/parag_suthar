@@ -104,6 +104,16 @@ const HeroSection = () => {
                   <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </Link>
+              <a
+                href="/assets/Parag_Kumar_Suthar_Resume.pdf"
+                download="Parag_Kumar_Suthar_Resume.pdf"
+                className="group inline-flex items-center gap-2 px-6 py-3 border border-knight-gray/30 text-knight-gray-faint font-outfit font-semibold text-sm rounded-sm transition-all duration-300 hover:border-knight-red/50 hover:text-knight-red hover:bg-knight-red/5 hover:shadow-[0_0_16px_rgba(192,57,43,0.15)]"
+              >
+                <svg className="w-4 h-4 transition-transform group-hover:translate-y-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Download CV
+              </a>
             </div>
 
             {/* Quick-nav pills */}

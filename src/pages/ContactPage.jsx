@@ -121,6 +121,21 @@ const ContactPage = () => {
                 </div>
               </div>
 
+              {/* Download CV */}
+              <div className="pt-4 border-t border-knight-black-5">
+                <p className="text-knight-gray-muted text-xs font-mono mb-3">// Resume</p>
+                <a
+                  href="/assets/Parag_Kumar_Suthar_Resume.pdf"
+                  download="Parag_Kumar_Suthar_Resume.pdf"
+                  className="group flex items-center justify-center gap-2 w-full py-3 border border-knight-red/40 text-knight-red text-sm font-outfit font-semibold rounded-sm transition-all duration-300 hover:bg-knight-red/10 hover:border-knight-red hover:shadow-[0_0_18px_rgba(192,57,43,0.25)]"
+                >
+                  <svg className="w-4 h-4 transition-transform group-hover:translate-y-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Download CV
+                </a>
+              </div>
+
               {/* Quick links */}
               <div className="pt-4 border-t border-knight-black-5">
                 <p className="text-knight-gray-muted text-xs font-mono mb-3">// Other Pages</p>

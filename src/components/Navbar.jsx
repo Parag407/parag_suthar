@@ -74,10 +74,22 @@ const Navbar = () => {
             );
           })}
 
+          {/* Download CV */}
+          <a
+            href="/assets/Parag_Kumar_Suthar_Resume.pdf"
+            download="Parag_Kumar_Suthar_Resume.pdf"
+            className="ml-2 inline-flex items-center gap-1.5 px-4 py-2 border border-knight-red/50 text-knight-red text-sm font-outfit font-semibold rounded-sm transition-all duration-200 hover:border-knight-red hover:bg-knight-red/10 hover:shadow-[0_0_14px_rgba(192,57,43,0.3)]"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            CV
+          </a>
+
           {/* CTA */}
           <Link
             to="/contact"
-            className="ml-3 px-5 py-2 bg-knight-red text-white text-sm font-outfit font-semibold rounded-sm transition-all duration-200 hover:bg-knight-red-bright hover:shadow-[0_0_18px_rgba(192,57,43,0.5)]"
+            className="ml-1 px-5 py-2 bg-knight-red text-white text-sm font-outfit font-semibold rounded-sm transition-all duration-200 hover:bg-knight-red-bright hover:shadow-[0_0_18px_rgba(192,57,43,0.5)]"
           >
             Contact Me
           </Link>
@@ -119,8 +131,18 @@ const Navbar = () => {
               </Link>
             );
           })}
-          {/* Mobile CTA */}
-          <div className="pt-3">
+          {/* Mobile CTAs */}
+          <div className="pt-3 flex flex-col gap-2">
+            <a
+              href="/assets/Parag_Kumar_Suthar_Resume.pdf"
+              download="Parag_Kumar_Suthar_Resume.pdf"
+              className="flex items-center justify-center gap-2 w-full py-3 border border-knight-red/50 text-knight-red text-sm font-outfit font-semibold rounded-sm transition-all duration-200 hover:bg-knight-red/10"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download CV
+            </a>
             <Link
               to="/contact"
               className="flex items-center justify-center gap-2 w-full py-3 bg-knight-red text-white text-sm font-outfit font-semibold rounded-sm transition-all duration-200 hover:bg-knight-red-bright"
