@@ -170,6 +170,26 @@ A foundational project that sharpened HTML5 semantic structure, CSS Grid/Flexbox
     live: '#',
     color: '#8B1A1A',
   },
+  {
+    id: 9,
+    title: 'Gantt Chart Maker',
+    subtitle: 'Project Scheduling & Timeline Tool',
+    period: '2024',
+    category: 'Frontend',
+    status: 'Completed',
+    featured: false,
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    tags: ['Frontend', 'Tool', 'Utility', 'Third-Year'],
+    desc: `Developed a dedicated Gantt chart maker to visualize project schedules and timelines. This tool was specifically designed and used to manage software engineering projects during my third year of BSc IT.
+
+It features a visual timeline representation, allowing for clear project tracking and dynamic schedule visualization using native web technologies.`,
+    highlights: ['Visual timeline representation', 'Dynamic schedule adjustments', 'Third-year academic tool', 'Native JS implementation'],
+    imgFile: 'gantt_chart.jpg',
+    imgPlaceholder: 'Gantt Chart Interface & Task List',
+    github: 'https://github.com/Parag407/GanttChart',
+    live: 'https://gantt-chart-navy.vercel.app/',
+    color: '#C0392B',
+  },
 ];
 
 const allTags = ['All', 'Full Stack', 'Frontend', 'Backend', 'AI', 'React', 'Django', 'Education', 'Deployed', 'Design'];

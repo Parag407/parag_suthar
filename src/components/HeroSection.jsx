@@ -167,7 +167,7 @@ const HeroSection = () => {
                   <div className="text-knight-gray-faint font-inter text-xs">Yrs Exp.</div>
                 </div>
                 <div className="absolute left-2 bottom-2 sm:-left-8 sm:bottom-4 bg-knight-black-3/90 backdrop-blur border border-knight-red/30 rounded-sm px-2 py-1.5 sm:px-3 sm:py-2 shadow-lg">
-                  <div className="text-knight-red font-outfit font-bold text-base sm:text-xl leading-none">8+</div>
+                  <div className="text-knight-red font-outfit font-bold text-base sm:text-xl leading-none">9+</div>
                   <div className="text-knight-gray-faint font-inter text-xs">Projects</div>
                 </div>
               </div>

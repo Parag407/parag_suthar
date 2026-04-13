@@ -91,6 +91,21 @@ const projects = [
     featured: false,
     color: '#8B1A1A',
   },
+  {
+    title: 'Gantt Chart Maker',
+    subtitle: 'Project Scheduling & Timeline Tool',
+    period: '2024',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    desc: 'Developed a custom Gantt chart maker to visualize project schedules and timelines for software engineering projects in my third year.',
+    highlights: [
+      'Visual timeline representation',
+      'Dynamic schedule adjustments',
+      'Third-year academic tool',
+    ],
+    icon: '📊',
+    featured: false,
+    color: '#C0392B',
+  },
 ];
 
 const ProjectCard = ({ project, index }) => {
