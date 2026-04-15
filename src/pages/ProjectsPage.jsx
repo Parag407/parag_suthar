@@ -166,8 +166,8 @@ A foundational project that sharpened HTML5 semantic structure, CSS Grid/Flexbox
     highlights: ['Hotstar UI recreation', 'Responsive CSS Grid/Flex', 'JavaScript DOM interactions', 'Semantic HTML5 structure'],
     imgFile: 'hotstar_clone.jpg',
     imgPlaceholder: 'Hotstar Clone Homepage & Content Sections',
-    github: '#',
-    live: '#',
+    github: 'https://github.com/Parag407/Hotstar-clone/',
+    live: 'https://hotstar-clone-sand-seven.vercel.app/',
     color: '#8B1A1A',
   },
   {
