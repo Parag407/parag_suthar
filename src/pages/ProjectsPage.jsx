@@ -66,8 +66,8 @@ The platform includes user authentication & registration, post creation with med
     highlights: ['User auth & registration flow', 'Post feeds with media', 'Follow/unfollow system', 'Django + MySQL backend'],
     imgFile: 'simple_media.jpg',
     imgPlaceholder: 'Simple Media Feed, Profile, & Post Views',
-    github: '#',
-    live: '#',
+    github: 'https://github.com/Parag407/simple-media',
+    live: 'https://x-app-cllp.onrender.com/',
     color: '#C0392B',
   },
   {
