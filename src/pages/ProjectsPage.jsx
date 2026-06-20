@@ -570,7 +570,7 @@ const ProjectsPage = () => {
               {filtered.map(p => (
                 <div
                   key={p.id}
-                  className="knight-card rounded-sm overflow-hidden flex flex-col sm:flex-row gap-0 group transition-all duration-300 hover:shadow-[0_0_20px_rgba(192,57,43,0.15)]"
+                  className="knight-card rounded-sm overflow-hidden flex flex-col sm:flex-row gap-0 group transition-all duration-300 hover:shadow-[0_0_20px_rgba(192,57,43,0.15)] sm:h-48"
                   style={{ borderColor: `${p.color}20` }}
                 >
                   {/* Thumbnail — hidden on mobile, shown on sm+ */}
@@ -583,24 +583,24 @@ const ProjectsPage = () => {
                     )}
                   </div>
                   {/* Content */}
-                  <div className="flex-1 p-5">
+                  <div className="flex-1 p-5 flex flex-col justify-between overflow-hidden">
                     <div className="flex items-start justify-between gap-4">
-                      <div>
+                      <div className="min-w-0 flex-1">
                         <div className="flex items-center gap-2 mb-1">
-                          <span className="text-[9px] font-mono px-1.5 py-0.5 rounded" style={{ background: `${p.color}15`, color: p.color }}>{p.category}</span>
-                          <span className={`text-[9px] font-mono px-1.5 py-0.5 rounded ${p.status === 'Live' ? 'bg-green-900/60 text-green-400' : 'bg-knight-black-5 text-knight-gray-muted'}`}>{p.status}</span>
-                          <span className="text-[9px] font-mono text-knight-gray/40">{p.period}</span>
+                          <span className="text-[9px] font-mono px-1.5 py-0.5 rounded flex-shrink-0" style={{ background: `${p.color}15`, color: p.color }}>{p.category}</span>
+                          <span className={`text-[9px] font-mono px-1.5 py-0.5 rounded flex-shrink-0 ${p.status === 'Live' ? 'bg-green-900/60 text-green-400' : 'bg-knight-black-5 text-knight-gray-muted'}`}>{p.status}</span>
+                          <span className="text-[9px] font-mono text-knight-gray/40 truncate">{p.period}</span>
                         </div>
-                        <h3 className="font-outfit font-bold text-knight-white text-lg">{p.title}</h3>
-                        <p className="text-knight-gray-muted text-xs mb-2">{p.subtitle}</p>
+                        <h3 className="font-outfit font-bold text-knight-white text-lg truncate">{p.title}</h3>
+                        <p className="text-knight-gray-muted text-xs mb-2 truncate">{p.subtitle}</p>
                         <p className="text-knight-gray-faint text-xs leading-relaxed line-clamp-2">{p.desc}</p>
                       </div>
                       <div className="flex flex-col gap-2 flex-shrink-0">
-                        <a href={p.github} className="px-3 py-1.5 border border-knight-gray/30 text-knight-gray-muted text-[10px] font-mono rounded-sm hover:border-knight-red/50 hover:text-knight-red transition-all text-center">GitHub</a>
-                        <a href={p.live} className="px-3 py-1.5 bg-knight-red/10 border border-knight-red/30 text-knight-red text-[10px] font-mono rounded-sm hover:bg-knight-red/20 transition-all text-center">Live</a>
+                        <a href={p.github} className="px-3 py-1.5 border border-knight-gray/30 text-knight-gray-muted text-[10px] font-mono rounded-sm hover:border-knight-red/50 hover:text-knight-red transition-all text-center min-w-[76px]">GitHub</a>
+                        <a href={p.live} className="px-3 py-1.5 bg-knight-red/10 border border-knight-red/30 text-knight-red text-[10px] font-mono rounded-sm hover:bg-knight-red/20 transition-all text-center min-w-[76px]">Live</a>
                       </div>
                     </div>
-                    <div className="flex flex-wrap gap-1 mt-3">
+                    <div className="flex flex-wrap gap-1 mt-3 overflow-hidden max-h-[26px]">
                       {p.tech.map(t => (
                         <span key={t} className="text-[9px] px-1.5 py-0.5 font-mono bg-knight-black-5 text-knight-gray/50 border border-knight-gray/15 rounded">{t}</span>
                       ))}
