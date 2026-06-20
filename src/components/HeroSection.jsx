@@ -80,7 +80,7 @@ const HeroSection = () => {
 
             {/* Summary */}
             <p className="text-knight-gray-muted font-inter text-base leading-relaxed mb-8 max-w-lg">
-              BSc IT graduate with <span className="text-knight-red font-semibold">SGPI 9.6</span> from Hinduja College.
+              BSc IT graduate with <span className="text-knight-red font-semibold">CGPA 9.5</span> from Hinduja College.
               Full Stack Developer with expertise in React, Node.js, Python & AI integrations.
             </p>
 
@@ -159,8 +159,8 @@ const HeroSection = () => {
 
                 {/* Floating stats — inside photo on mobile, outside on sm+ */}
                 <div className="absolute left-2 top-2 sm:-left-12 sm:top-8 bg-knight-black-3/90 backdrop-blur border border-knight-red/30 rounded-sm px-2 py-1.5 sm:px-3 sm:py-2 shadow-lg">
-                  <div className="text-knight-red font-outfit font-bold text-base sm:text-xl leading-none">9.6</div>
-                  <div className="text-knight-gray-faint font-inter text-xs">SGPI</div>
+                  <div className="text-knight-red font-outfit font-bold text-base sm:text-xl leading-none">9.5</div>
+                  <div className="text-knight-gray-faint font-inter text-xs">CGPA</div>
                 </div>
                 <div className="absolute right-2 bottom-16 sm:-right-12 sm:bottom-12 bg-knight-black-3/90 backdrop-blur border border-knight-red/30 rounded-sm px-2 py-1.5 sm:px-3 sm:py-2 shadow-lg">
                   <div className="text-knight-red font-outfit font-bold text-base sm:text-xl leading-none">1+</div>

@@ -28,7 +28,7 @@ const AboutSection = () => {
   const ref = useReveal();
 
   const stats = [
-    { label: 'SGPI Score', value: '9.6', sub: 'BSc IT — Outstanding', icon: '🎓' },
+    { label: 'CGPA Score', value: '9.5', sub: 'BSc IT — Outstanding', icon: '🎓' },
     { label: 'HSC Score', value: '90%', sub: 'Shankar Narayan College', icon: '📚' },
     { label: 'Experience', value: '1+ yr', sub: 'Full Stack Intern', icon: '💼' },
     { label: 'Projects', value: '6+', sub: 'Production-ready apps', icon: '🚀' },
@@ -78,14 +78,14 @@ const AboutSection = () => {
               <div className="pl-4 space-y-1">
                 <div><span className="text-knight-red-bright">name</span><span className="text-knight-gray-muted">: </span><span className="text-green-400">"Parag Kumar Suthar"</span><span className="text-knight-gray-muted">,</span></div>
                 <div><span className="text-knight-red-bright">role</span><span className="text-knight-gray-muted">: </span><span className="text-green-400">"Full Stack Developer"</span><span className="text-knight-gray-muted">,</span></div>
-                <div><span className="text-knight-red-bright">sgpi</span><span className="text-knight-gray-muted">: </span><span className="text-yellow-400">9.6</span><span className="text-knight-gray-muted">,</span></div>
+                <div><span className="text-knight-red-bright">cgpa</span><span className="text-knight-gray-muted">: </span><span className="text-yellow-400">9.5</span><span className="text-knight-gray-muted">,</span></div>
                 <div><span className="text-knight-red-bright">passion</span><span className="text-knight-gray-muted">: </span><span className="text-green-400">"Building the future"</span></div>
               </div>
               <div className="text-knight-gray-muted">{'}'}</div>
             </div>
 
             <p className="text-knight-gray-faint font-inter text-base leading-relaxed">
-              I'm a motivated <span className="text-knight-white font-medium">BSc IT graduate</span> (SGPI 9.6) from Hinduja College 
+              I'm a motivated <span className="text-knight-white font-medium">BSc IT graduate</span> (CGPA 9.5) from Hinduja College 
               specializing in full-stack web development and Python programming. I thrive at the intersection 
               of clean code and beautiful design.
             </p>

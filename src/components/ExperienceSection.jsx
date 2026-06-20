@@ -23,8 +23,8 @@ const ExperienceSection = () => {
       org: 'K.P.B. Hinduja College, Mumbai University',
       period: '08/2022 – 05/2025',
       location: 'Mumbai',
-      score: 'SGPI: 9.6 (Outstanding)',
-      highlights: ['SGPI: 9.6 (Outstanding)', '97.30% in SYBSC.IT'],
+      score: 'CGPA: 9.5 (Outstanding)',
+      highlights: ['CGPA: 9.5 (Outstanding)', '97.30% in SYBSC.IT'],
     },
     {
       degree: 'Higher Secondary Certificate (HSC)',
