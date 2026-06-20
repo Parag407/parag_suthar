@@ -38,7 +38,7 @@ const timelineData = [
   },
   {
     year: '2023',
-    period: 'August 2022 — Ongoing',
+    period: 'August 2023 — June 2026',
     category: 'Education',
     icon: '🏛️',
     tag: 'Journey',
