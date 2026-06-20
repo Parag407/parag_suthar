@@ -24,7 +24,7 @@ The platform provides students with browser-based code editors, teacher-curated 
 
 I led a team from initial requirement gathering, system design, all the way through to development and deployment. The project demonstrates end-to-end product ownership.`,
     highlights: ['Browser-based code editors', 'Teacher + Student dashboards', 'Real-time feedback system', 'Team lead from scratch to ship'],
-    imgFile: 'gyancode.jpg',
+    imgFile: 'gyancode.png',
     imgPlaceholder: 'GyanCode Platform Dashboard & Code Editor',
     github: 'http://github.com/Parag407/GyanCode',
     live: 'https://gyan-code.vercel.app/',
@@ -44,7 +44,7 @@ I led a team from initial requirement gathering, system design, all the way thro
 
 Built as a lightweight, accessible tool that requires no installation — developers can write, run, and get AI-assisted feedback entirely in-browser. Deployed on Vercel for instant global access.`,
     highlights: ['AI code suggestions via DeepSeek R1', 'Zero-install browser IDE', 'Auto-completion & error hints', 'Deployed live on Vercel'],
-    imgFile: 'ai_code_editor.jpg',
+    imgFile: 'ai_code_editor.png',
     imgPlaceholder: 'AI Code Editor Interface & AI Suggestions Panel',
     github: 'https://github.com/Parag407/CodeWeb-v3',
     live: 'https://code-web-v3.vercel.app/',
@@ -64,7 +64,7 @@ Built as a lightweight, accessible tool that requires no installation — develo
 
 The platform includes user authentication & registration, post creation with media attachments, real-time-style feed browsing, follow/unfollow mechanics, user profile management with bio and avatar, and comment/like interactions — all designed with a clean, minimal UI.`,
     highlights: ['User auth & registration flow', 'Post feeds with media', 'Follow/unfollow system', 'Django + MySQL backend'],
-    imgFile: 'simple_media.jpg',
+    imgFile: 'simple_media.png',
     imgPlaceholder: 'Simple Media Feed, Profile, & Post Views',
     github: 'https://github.com/Parag407/simple-media',
     live: 'https://x-app-cllp.onrender.com/',
@@ -84,7 +84,7 @@ The platform includes user authentication & registration, post creation with med
 
 Built with React for the frontend, Node.js for the API layer, and Supabase for database and file storage. The platform features secure authentication, PDF upload/preview, categorization by subject and semester, seller profiles, and a simple purchase flow.`,
     highlights: ['PDF upload & secure preview', 'Supabase auth & storage', 'Subject/semester filtering', 'Student monetization flow'],
-    imgFile: 'edudoc.jpg',
+    imgFile: 'edudoc.png',
     imgPlaceholder: 'EduDoc Marketplace & Document Preview',
     github: '#',
     live: '#',
@@ -92,7 +92,7 @@ Built with React for the frontend, Node.js for the API layer, and Supabase for d
   },
   {
     id: 5,
-    title: 'News Browsing Website',
+    title: 'Dinbhar-news',
     subtitle: 'Real-time News Aggregator with Category Filters',
     period: '2023',
     category: 'Frontend',
@@ -104,10 +104,10 @@ Built with React for the frontend, Node.js for the API layer, and Supabase for d
 
 Key features include a real-time news feed with article thumbnails, category-based filtering, search functionality, article preview with source attribution, and infinite scroll pagination. Designed to be fast, responsive, and readable on all devices.`,
     highlights: ['Live NewsAPI integration', 'Category filtering system', 'Search & infinite scroll', 'Fully responsive layout'],
-    imgFile: 'news_website.jpg',
+    imgFile: 'dinbhar-news.png',
     imgPlaceholder: 'News Aggregator Homepage & Category Views',
-    github: '#',
-    live: '#',
+    github: 'https://github.com/Parag407/dinbhar-news',
+    live: 'https://dinbhar-news.vercel.app/',
     color: '#C0392B',
   },
   {
@@ -124,7 +124,7 @@ Key features include a real-time news feed with article thumbnails, category-bas
 
 Features include a chronological gallery, dedicated projects page with search, Web3Forms contact integration, fully responsive design, and SEO optimization. Every animation, gradient, and interaction was custom-crafted.`,
     highlights: ['Custom knight red/black design system', 'Canvas particle background', 'Scroll-reveal animations', 'Web3Forms integration', 'Gallery & Projects pages'],
-    imgFile: 'portfolio_website.jpg',
+    imgFile: 'portfolio_website.png',
     imgPlaceholder: 'Portfolio Hero, Gallery, and Projects Pages',
     github: 'https://github.com/Parag407/parag_suthar',
     live: 'https://parag-suthar.vercel.app/',
@@ -132,23 +132,28 @@ Features include a chronological gallery, dedicated projects page with search, W
   },
   {
     id: 7,
-    title: 'Instagram Auth Clone',
-    subtitle: 'Backend Authentication System — Instagram Style',
-    period: '2024',
-    category: 'Backend',
-    status: 'Completed',
+    title: 'WealthWize',
+    subtitle: 'Premium Simulated Stock Market & Portfolio Dashboard',
+    period: '2025',
+    category: 'Frontend',
+    status: 'Live',
     featured: false,
-    tech: ['Node JS', 'Express JS', 'JWT', 'MongoDB'],
-    tags: ['Backend', 'Auth', 'REST API', 'Node.js'],
-    desc: `A production-quality backend authentication system modeled after Instagram's auth flow, built as part of the NodeJS & Express JS Bootcamp by Devtown.
+    tech: ['HTML5', 'Vanilla CSS3', 'Vanilla JS (ES6+)', 'Chart.js', 'LocalStorage'],
+    tags: ['Frontend', 'Design', 'Deployed'],
+    desc: `WealthWize is a premium, high-fidelity simulated portfolio management and stock market analysis dashboard built to rival professional institutional tools. It offers users a comprehensive suite of features to track holdings, analyze technical indicators, and simulate trades in a sleek, highly responsive dark/gold bento grid layout.
 
-Implements full JWT-based authentication including registration, login, token refresh, protected routes, and session management. Built with Express.js middleware architecture, bcrypt password hashing, and MongoDB for user storage.`,
-    highlights: ['JWT auth with token refresh', 'Bcrypt password security', 'Protected route middleware', 'MongoDB user management'],
-    imgFile: 'instagram_auth_clone.jpg',
-    imgPlaceholder: 'API Routes, Postman Tests & Auth Flow Diagram',
-    github: '#',
-    live: '#',
-    color: '#C0392B',
+Built entirely without heavy frontend frameworks (no React/Vue/Tailwind) to ensure raw performance, it relies on HTML5, Vanilla CSS3, and modern JavaScript for DOM injection and state management. Interactive charts are powered by Chart.js, and local persistence is handled via Browser LocalStorage.`,
+    highlights: [
+      'Simulated trading engine & transaction ledger',
+      '8 core sections including Portfolio, Watchlist, Alerts & Stock Details',
+      'Luxurious Dark/Gold theme with Glassmorphism & Bento Grid layout',
+      'Advanced Market Scanner & dynamic Chart.js visualizations'
+    ],
+    imgFile: 'wealthwize.png',
+    imgPlaceholder: 'WealthWize Simulated Portfolio Dashboard UI',
+    github: 'https://github.com/Parag407/wealthwize',
+    live: 'https://wealthwize.vercel.app/',
+    color: '#D4AF37',
   },
   {
     id: 8,
@@ -164,7 +169,7 @@ Implements full JWT-based authentication including registration, login, token re
 
 A foundational project that sharpened HTML5 semantic structure, CSS Grid/Flexbox layouts, responsive design breakpoints, and JavaScript DOM manipulation skills.`,
     highlights: ['Hotstar UI recreation', 'Responsive CSS Grid/Flex', 'JavaScript DOM interactions', 'Semantic HTML5 structure'],
-    imgFile: 'hotstar_clone.jpg',
+    imgFile: 'hotstar_clone.png',
     imgPlaceholder: 'Hotstar Clone Homepage & Content Sections',
     github: 'https://github.com/Parag407/Hotstar-clone/',
     live: 'https://hotstar-clone-sand-seven.vercel.app/',
@@ -184,7 +189,7 @@ A foundational project that sharpened HTML5 semantic structure, CSS Grid/Flexbox
 
 It features a visual timeline representation, allowing for clear project tracking and dynamic schedule visualization using native web technologies.`,
     highlights: ['Visual timeline representation', 'Dynamic schedule adjustments', 'Third-year academic tool', 'Native JS implementation'],
-    imgFile: 'gantt_chart.jpg',
+    imgFile: 'gant_chart.png',
     imgPlaceholder: 'Gantt Chart Interface & Task List',
     github: 'https://github.com/Parag407/GanttChart',
     live: 'https://gantt-chart-navy.vercel.app/',
