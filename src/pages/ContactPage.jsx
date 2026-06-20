@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const contactInfo = [
-  { icon: '📧', label: 'Email',    value: 'paragsuthar407@gmail.com', href: 'mailto:paragsuthar407@gmail.com' },
+  { icon: '📧', label: 'Email',    value: 'paragsuthar.work@gmail.com', href: 'mailto:paragsuthar.work@gmail.com' },
   { icon: '📞', label: 'Phone',    value: '+91 9867618804',            href: 'tel:+919867618804' },
   { icon: '📍', label: 'Location', value: 'Bhayander (East), Mumbai — 401105', href: '#' },
 ];

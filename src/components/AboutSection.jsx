@@ -37,7 +37,7 @@ const AboutSection = () => {
   const highlights = [
     { label: 'Location', value: 'Bhayander (East), Mumbai — 401105', icon: '📍' },
     { label: 'Phone', value: '+91 9867618804', icon: '📞' },
-    { label: 'Email', value: 'paragsuthar407@gmail.com', icon: '✉️' },
+    { label: 'Email', value: 'paragsuthar.work@gmail.com', icon: '✉️' },
     { label: 'Education', value: 'BSc Information Technology', icon: '🎓' },
     { label: 'College', value: 'K.P.B. Hinduja College, Mumbai University', icon: '🏛️' },
   ];
