@@ -79,8 +79,8 @@ const timelineData = [
     color: '#C0392B',
   },
   {
-    year: '2024',
-    period: 'January 2024',
+    year: '2026',
+    period: 'January 2026',
     category: 'Career',
     icon: '💼',
     tag: 'Internship',
