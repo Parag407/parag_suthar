@@ -107,8 +107,8 @@ const timelineData = [
     color: '#C0392B',
   },
   {
-    year: '2026',
-    period: 'January 2026',
+    year: '2025',
+    period: 'December 2025',
     category: 'Achievement',
     icon: '🥇',
     tag: '1st Place',
