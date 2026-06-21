@@ -48,11 +48,6 @@ const HeroSection = () => {
           {/* ── Left ── */}
           <div className={`transition-all duration-1000 ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
 
-            {/* Status badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-knight-red/30 bg-knight-red/10 mb-6">
-              <div className="w-2 h-2 rounded-full bg-knight-red animate-pulse" />
-              <span className="text-knight-red text-xs font-mono font-medium">Available for opportunities</span>
-            </div>
 
             {/* Greeting */}
             <p className="text-knight-gray-muted font-mono text-sm mb-3">
