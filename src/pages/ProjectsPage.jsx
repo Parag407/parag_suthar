@@ -198,7 +198,7 @@ It features a visual timeline representation, allowing for clear project trackin
 ];
 
 const allTags = ['All', 'Full Stack', 'Frontend', 'Backend', 'AI', 'React', 'Django', 'Education', 'Deployed', 'Design'];
-const allCategories = ['All', 'Full Stack', 'Frontend', 'Backend', 'AI/ML'];
+const allCategories = ['All', 'Full Stack', 'Frontend', 'Backend'];
 
 // ──────────────────────────────────────────
 // PROJECT IMAGE (real or placeholder)
