@@ -102,7 +102,7 @@ const ContactPage = () => {
                 <p className="text-knight-gray-muted text-xs font-mono mb-3">// Social Profiles</p>
                 <div className="flex gap-3">
                   {[
-                    { label: 'LinkedIn', icon: <i className="fab fa-linkedin-in text-base"></i>, href: 'https://www.linkedin.com/in/parag-suthar-05b50b280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+                    { label: 'LinkedIn', icon: <i className="fab fa-linkedin-in text-base"></i>, href: 'https://www.linkedin.com/in/parag-suthar-a7b808404/' },
                     { label: 'GitHub',   icon: <i className="fab fa-github text-base"></i>, href: 'https://github.com/Parag407' },
                     { label: 'Twitter',  icon: <i className="fab fa-twitter text-base"></i>, href: 'https://x.com/paragsuthar407?t=E4wwf9vWGn0fnEue3KPZPA&s=09' },
                     { label: 'Instagram',icon: <i className="fab fa-instagram text-base"></i>, href: 'https://www.instagram.com/parag_ig?igsh=MWdzNml1dHdrYm04bg==' },

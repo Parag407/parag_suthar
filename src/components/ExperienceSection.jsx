@@ -124,6 +124,46 @@ const ExperienceSection = () => {
               </div>
             </div>
 
+            {/* Prompt Engineer Experience Card */}
+            <div className="reveal knight-card p-6 rounded-sm relative overflow-hidden mb-8">
+              {/* Top red bar */}
+              <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-knight-red via-knight-red-bright to-transparent" />
+
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
+                <div>
+                  <h4 className="font-outfit font-bold text-knight-white text-lg">Prompt Engineer</h4>
+                  <p className="text-knight-red font-semibold text-sm mt-1">Amazent Content Services LLP</p>
+                </div>
+                <div className="flex-shrink-0 sm:text-right">
+                  <span className="text-xs bg-knight-red/15 border border-knight-red/30 text-knight-red px-2 py-1 rounded font-mono">
+                    03/2025 – 06/2025
+                  </span>
+                  <p className="text-knight-gray-muted text-xs mt-1 sm:text-right">📍 Mumbai</p>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                {[
+                  'Designed, tested, and optimized prompts for large language models to generate accurate, high-quality, and contextual AI-driven content',
+                  'Established workflows for prompt evaluation, formatting, and tuning to improve model efficiency',
+                ].map((bullet, i) => (
+                  <div key={i} className="flex gap-3 text-sm text-knight-gray-faint">
+                    <span className="text-knight-red mt-1 flex-shrink-0">▸</span>
+                    <span className="leading-relaxed">{bullet}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Tech stack pills */}
+              <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-knight-black-5">
+                {['Prompt Engineering', 'LLMs', 'Prompt Tuning', 'Generative AI'].map(tech => (
+                  <span key={tech} className="text-xs px-2 py-0.5 bg-knight-red/10 text-knight-red border border-knight-red/20 rounded font-mono">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             {/* Leadership Section */}
             <h3 className="font-outfit font-bold text-knight-white mb-6 flex items-center gap-3 reveal">
               <div className="w-8 h-8 bg-knight-red/15 border border-knight-red/30 rounded-sm flex items-center justify-center">
